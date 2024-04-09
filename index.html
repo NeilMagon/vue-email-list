@@ -11,7 +11,7 @@
     <div id="app">
         <ul>
             <template v-for= "email in emails">
-                <li>
+                <li v-if="emails.length === 10">
                     {{email}}
                 </li>
             </template>
